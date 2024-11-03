@@ -1,0 +1,10 @@
+.button {
+    background-color: var(--Bright-Red);
+    border-color: transparent;
+    color: white;
+    box-shadow: 2px 5px 5px  var(--Dark-Grayish-Blue);
+    &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
