@@ -1,5 +1,5 @@
 import styles from '../styles/header.module.css'
-
+import Button from './Button'
 
 const Header = () => {
 
@@ -29,8 +29,7 @@ const Header = () => {
                                 <a className='nav-link' href='#'>Community</a>
                             </li>
                         </ul>
-                    
-                        <button className={`${styles.button} rounded-pill px-4 py-2`}>Get Started</button>
+                    <Button />
                 </div>
             </nav>
         </>

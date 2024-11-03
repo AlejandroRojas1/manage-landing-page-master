@@ -1,7 +1,6 @@
 :root {
     /* Primary */
     --Bright-Red: hsl(12, 88%, 59%);
-    --Bright-Red: hsl(12, 63%, 77%);
     --Dark-Blue: hsl(228, 39%, 23%);
 
     /* Neutral */
@@ -11,14 +10,22 @@
     --Very-Light-Gray: hsl(0, 0%, 98%);
 }
 
-.header {
+section {
     margin: 0 165px;
-    ul li a {
-        font-weight: 400;
-        color: var(--Very-Dark-Blue);
-        &:hover {
+    .descriptionContainer {
+        h1 {
+            font-weight: 700;
+            color: var(--Dark-Blue);
+            width: 100%;
+            font-size: 3em;
+            margin-bottom: 2rem;
+        }
+        .descriptionInfo {
             color: var(--Dark-Grayish-Blue);
+            font-size: 18px;
+            margin-right: 1rem;
+            
+            width: 50%;
         }
     }
-
 }
