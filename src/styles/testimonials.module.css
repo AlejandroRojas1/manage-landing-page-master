@@ -1,0 +1,28 @@
+.sliderContainer {
+    
+    .slider {
+        .slideTrack {
+            animation: scroll 15s linear infinite alternate;
+            -webkit-animation: scroll 15s linear infinite alternate;
+            width: calc(27% * 5);
+
+            .slide {
+                width: 27%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes scroll {
+    to {
+        -webkit-transform: translateX(calc(-27% * 1));
+        transform: translateX(calc(-27% * 1)); 
+    }
+}
