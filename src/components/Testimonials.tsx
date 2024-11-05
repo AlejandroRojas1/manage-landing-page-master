@@ -1,4 +1,5 @@
 import styles from '../styles/testimonials.module.css'
+import Button from './Button'
 
 type TestimonialsTypes = {
     profile: string,
@@ -40,15 +41,19 @@ const Testimonials = () => {
                 <h2 className='text-center my-5'>What they’ve said</h2>
                 <div className={`${styles.slideTrack} d-flex`}>
                     {testimonials.map(testimony => (
-                        <div key={testimony.key} className={styles.slide}>
-                            <img src={testimony.profile} alt={testimony.name} />
+                        <div key={testimony.key} className={`${styles.slide} text-center mx-2 mb-5 rounded`}>
+                            <img src={testimony.profile} alt={testimony.name}/>
                             <div className={styles.testimonyContainer}>
-                                <h4>{testimony.name}</h4>
+                                <h4 className='my-4'>{testimony.name}</h4>
                                 <p>{testimony.testimony}</p>
                             </div>
                         </div>
                     ))}
                 </div>
+                <span className='w-100 mb-5 d-flex justify-content-center'>
+                    <Button />
+                </span>
+                
             </div>
         </section>
     )

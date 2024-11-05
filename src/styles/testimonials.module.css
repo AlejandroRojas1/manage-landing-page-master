@@ -1,3 +1,17 @@
+:root {
+    /* Primary */
+    --Bright-Red: hsl(12, 88%, 59%);
+    --Dark-Blue: hsl(228, 39%, 23%);
+
+    /* Neutral */
+    --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+    --bg: hsla(227, 18%, 75%, 0.171);
+    --Very-Dark-Blue: hsl(233, 12%, 13%);
+    --Very-Pale-Red: hsl(13, 100%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+
 .sliderContainer {
     
     .slider {
@@ -11,9 +25,26 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                background-color: var(--bg);
+                position: relative;
 
                 img {
-                    width: 100px;
+                    width: 70px;
+                    position: absolute;
+                    top: -2rem;
+                }
+
+                .testimonyContainer {
+                    h4 {
+                        padding-top: 2rem;
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: var(--Dark-Blue);
+                    }
+                    p {
+                        padding-inline: 2rem;
+                        color: var(--Dark-Grayish-Blue);
+                    }
                 }
             }
         }
