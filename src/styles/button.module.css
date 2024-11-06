@@ -1,3 +1,8 @@
+:root {
+    --Bright-Red: hsl(12, 88%, 59%);
+    --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+}
+
 .button {
     background-color: var(--Bright-Red);
     border-color: transparent;
@@ -7,4 +12,10 @@
         cursor: pointer;
         opacity: 0.7;
     }
+}
+.whiteButton {
+    background-color: white;
+    color: var(--Bright-Red);
+    box-shadow: none;
+    font-weight: 500;
 }
