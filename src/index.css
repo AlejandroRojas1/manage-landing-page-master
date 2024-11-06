@@ -8,9 +8,9 @@
 }
 
 body {
-    min-height: 100dvh;
-    /* background-image: url('/assets/bg-simplify-section-desktop.svg');
-    background-size:100%;
-    background-repeat: no-repeat; */
+    min-height: 100vh;
+    background-image: url('/assets/bg-tablet-pattern.svg'), url('/assets/bg-tablet-pattern.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: -20rem 65rem, 47rem -15rem;
 }
 

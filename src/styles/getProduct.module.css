@@ -3,6 +3,10 @@
 }
 
 .getProductContainer {
+    background-image: url('assets/bg-simplify-section-desktop.svg');
+    background-position-x: 14rem;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
     background-color: var(--Bright-Red);
     color: white;
     margin: 3rem 0 0 0;
