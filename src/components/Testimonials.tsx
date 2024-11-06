@@ -36,9 +36,9 @@ const testimonials: TestimonialsTypes[] = [
 
 const Testimonials = () => {
     return (
-        <section className={`${styles.sliderContainer} mx-0 mt-5`}>
+        <section className={`${styles.sliderContainer} mx-0`}>
             <div className={`${styles.slider} w-100 h-auto overflow-hidden`}>
-                <h2 className='text-center my-5'>What they’ve said</h2>
+                <h2 className='text-center'>What they’ve said</h2>
                 <div className={`${styles.slideTrack} d-flex`}>
                     {testimonials.map(testimony => (
                         <div key={testimony.key} className={`${styles.slide} text-center mx-2 mb-5 rounded`}>
@@ -51,7 +51,7 @@ const Testimonials = () => {
                     ))}
                 </div>
                 <span className='w-100 mb-5 d-flex justify-content-center'>
-                    <Button />
+                    <Button otherStyles='' children='Get Started'/>
                 </span>
                 
             </div>

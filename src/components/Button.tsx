@@ -1,8 +1,13 @@
 import styles from '../styles/button.module.css'
 
-const button= ()=> {
+type children = {
+  children: string
+  otherStyles: string
+}
+
+const button: React.FC<children> = ({children, otherStyles})=> {
   return (
-    <button className={`${styles.button} rounded-pill px-4 py-2`}>Get Started</button>
+    <button className={`${styles.button} ${otherStyles} rounded-pill px-4 py-2`}>{children}</button>
   )
 }
 

@@ -1,0 +1,49 @@
+:root {
+    --Very-Dark-Blue: hsl(233, 12%, 13%);
+    --Bright-Red: hsl(12, 88%, 59%);
+}
+
+.footerContainer {
+    background-color: var(--Very-Dark-Blue);
+    margin: 0;
+    padding-inline: 165px;
+    div:first-child {
+        span:last-child {
+            a {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            a:hover path {
+                fill: var(--Bright-Red);
+            }
+        }
+    }
+    ul {
+        margin: 0;
+        li {
+            list-style-type: none;
+            margin: 1rem 0;
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 13px;
+                &:hover {
+                    color: var(--Bright-Red);
+                }
+            }
+        }
+    }
+    div:last-child {
+        input {
+            border: 2px solid white;
+            &::placeholder {
+                font-size: 13px;
+            }
+            &:focus {
+                outline: none;
+                border-color: var(--Bright-Red);
+            }
+        }
+    }
+}

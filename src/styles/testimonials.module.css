@@ -13,8 +13,14 @@
 
 
 .sliderContainer {
-    
+    margin: 7rem 0;
     .slider {
+        h2 {
+            color: var(--Dark-Blue);
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 7rem;
+        }
         .slideTrack {
             animation: scroll 15s linear infinite alternate;
             -webkit-animation: scroll 15s linear infinite alternate;

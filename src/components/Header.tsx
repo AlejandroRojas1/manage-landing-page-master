@@ -29,7 +29,7 @@ const Header = () => {
                                 <a className='nav-link' href='#'>Community</a>
                             </li>
                         </ul>
-                    <Button />
+                    <Button otherStyles='' children='Get Started'/>
                 </div>
             </nav>
         </>

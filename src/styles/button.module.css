@@ -1,5 +1,6 @@
 :root {
     --Bright-Red: hsl(12, 88%, 59%);
+    --Bright-Red-low-opacity: hsla(12, 88%, 59%, 0.459);
     --Dark-Grayish-Blue: hsl(227, 12%, 61%);
 }
 
@@ -18,4 +19,8 @@
     color: var(--Bright-Red);
     box-shadow: none;
     font-weight: 500;
+    &:hover {
+        opacity: 1;
+        color: var(--Bright-Red-low-opacity);
+    }
 }

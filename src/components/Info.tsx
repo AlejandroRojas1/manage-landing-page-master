@@ -10,7 +10,7 @@ const Info = () => {
                     Manage makes it simple for software teams to plan day-to-day
                     tasks while keeping the larger team goals in view.
                 </p>
-                <Button />
+                <Button otherStyles='' children='Get Started'/>
             </div>
             <div className={styles.illustrationInfo}>
                 <img src="/assets/illustration-intro.svg" width={550} height={500} />
