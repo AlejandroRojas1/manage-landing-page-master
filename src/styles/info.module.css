@@ -12,7 +12,12 @@
 
 section {
     margin: 0 165px;
+    padding: 2rem 0;
+
     .descriptionContainer {
+        width: 50%;
+        margin: 2rem 0;
+
         h1 {
             font-weight: 700;
             color: var(--Dark-Blue);
@@ -20,12 +25,47 @@ section {
             font-size: 3em;
             margin-bottom: 2rem;
         }
+
         .descriptionInfo {
             color: var(--Dark-Grayish-Blue);
             font-size: 18px;
             margin-right: 1rem;
-            
-            width: 50%;
+            width: 75%;
+        }
+    }
+}
+
+@media (width <=1299px) {
+    section {
+        margin: 0 100px;
+    }
+}
+
+@media (width <=1189px) {
+    section {
+        margin: 0 50px;
+    }
+}
+
+@media (width <=1069px) {
+    section {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0 50px;
+        padding-top: 0;
+
+        .descriptionContainer {
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            align-items: center;
+
+            .descriptionInfo {
+                width: 100%;
+                margin-bottom: 2.5rem;
+            }
         }
     }
 }

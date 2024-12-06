@@ -22,3 +22,13 @@
     }
 
 }
+@media (width <= 1299px) {
+    .header {
+     margin: 0 100px;
+    }
+ }
+ @media (width <= 1189px) {
+    .header {
+     margin: 0 50px;
+    }
+ }
