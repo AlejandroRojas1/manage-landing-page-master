@@ -31,3 +31,8 @@
      margin: 0 50px;
     }
  }
+ @media (width <= 995px) {
+    .header {
+        margin: 0 20px;
+    }
+ }

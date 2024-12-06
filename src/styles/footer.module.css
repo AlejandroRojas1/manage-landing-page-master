@@ -7,43 +7,104 @@
     background-color: var(--Very-Dark-Blue);
     margin: 0;
     padding-inline: 165px;
-    div:first-child {
+    display: flex;
+    justify-content: space-between;
+
+    .socialContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
         span:last-child {
             a {
                 &:hover {
                     cursor: pointer;
                 }
             }
+
             a:hover path {
                 fill: var(--Bright-Red);
             }
         }
     }
-    ul {
-        margin: 0;
-        li {
-            list-style-type: none;
-            margin: 1rem 0;
-            a {
-                text-decoration: none;
-                color: white;
-                font-size: 13px;
-                &:hover {
-                    color: var(--Bright-Red);
+
+    .navFooterContainer {
+        display: flex;
+        justify-content: space-between;
+        width: 35%;
+
+        ul {
+            margin: 0;
+
+            li {
+                list-style-type: none;
+                margin: 1rem 0;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 13px;
+
+                    &:hover {
+                        color: var(--Bright-Red);
+                    }
                 }
             }
         }
     }
-    div:last-child {
+
+    .footerContactContainer {
+
         input {
             border: 2px solid white;
+
             &::placeholder {
                 font-size: 13px;
             }
+
             &:focus {
                 outline: none;
                 border-color: var(--Bright-Red);
             }
+        }
+    }
+}
+
+@media (width <=1299px) {
+    .footerContainer {
+        padding: 0 100px;
+    }
+}
+
+@media (width <=1189px) {
+    .footerContainer {
+        padding: 0 50px;
+    }
+}
+
+@media (width <=900px) {
+    .footerContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .socialContainer {
+            width: 30%;
+            height: 75px;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            margin-top: 2rem;
+
+            .logoContainer {
+                margin: 0 auto;
+            }
+        }
+
+        .navFooterContainer {
+            margin-top: 2rem;
+
+        }
+        .footerContactContainer {
+            margin-left: 3rem;
         }
     }
 }
