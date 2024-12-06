@@ -14,6 +14,7 @@
 .FeaturesContainer {
     display: flex;
     flex-direction: row;
+    margin: 0 165px;
 
     .featuresHeader {
         min-width: 50%;
@@ -62,10 +63,24 @@
     }
 }
 
+@media (width <=1299px) {
+    .FeaturesContainer {
+        margin: 0 100px;
+    }
+}
+
+@media (width <=1189px) {
+    .FeaturesContainer {
+        margin: 0 50px;
+    }
+}
+
+
 @media (width <=1069px) {
     .FeaturesContainer {
         flex-direction: column;
         align-items: center;
+        margin-right: 0;
 
         .featuresHeader {
             text-align: center;
