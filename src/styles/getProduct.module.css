@@ -13,7 +13,18 @@
     height: 13rem;
     padding-inline: 165px;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     h1 {
         max-width: 35rem;
+    }
+}
+
+@media (width <= 1075px) {
+    .getProductContainer {
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }
