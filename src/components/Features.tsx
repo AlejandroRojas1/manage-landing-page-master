@@ -26,25 +26,25 @@ const features: FeaturesTypes[] = [
 
 const Features = () => {
     return (
-        <section className={`${styles.FeaturesContainer} d-flex justify-content-between `}>
-            <div className="">
+        <section className={`${styles.FeaturesContainer}`}>
+            <div className={styles.featuresHeader}>
                 <h1 className="w-100 mb-5">What’s different about Manage?</h1>
-                <p className='w-75'>
+                <p>
                     Manage provides all the functionality your team needs, without
                     the complexity. Our software is tailor-made for modern digital
                     product teams.
                 </p>
             </div>
-            <div className="ms-5">
+            <div className={`${styles.featuresContentContainer} ms-5`}>
                 { features.map((feature=>(
-                    <div key={feature.index} className="d-flex ">
-                        <span className='rounded-pill px-4 py-2 align-self-start me-4'>{feature.index}</span>
-                        <span>
-                            <h4>{feature.title}</h4>
-                            <p>{feature.description}</p>
+                    <div key={feature.index} className={`${styles.featuresContent} d-flex`}>
+                        <span className={styles.pointContainer}>
+                            <span className={`${styles.point} rounded-pill px-4 py-2 align-self-start me-4`}>{feature.index}</span>
+                            <h4 className={styles.title}>{feature.title}</h4>
+                            <p className={styles.description}>{feature.description}</p>
                         </span>
                     </div>
-                ))) }
+                )))}
             </div>
         </section>
     )
