@@ -10,7 +10,7 @@
     --Very-Light-Gray: hsl(0, 0%, 98%);
 }
 
-section {
+.infoContainer {
     margin: 0 165px;
     padding: 2rem 0;
 
@@ -36,19 +36,19 @@ section {
 }
 
 @media (width <=1299px) {
-    section {
+    .infoContainer {
         margin: 0 100px;
     }
 }
 
 @media (width <=1189px) {
-    section {
+    .infoContainer {
         margin: 0 50px;
     }
 }
 
 @media (width <=1069px) {
-    section {
+    .infoContainer {
         flex-direction: column-reverse;
         align-items: center;
         margin: 0 50px;

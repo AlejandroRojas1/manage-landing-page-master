@@ -3,7 +3,7 @@ import Button from './Button'
 
 const Info = () => {
     return (
-        <section className='d-flex my-5'>
+        <section className={`${styles.infoContainer} d-flex my-5`}>
             <div className={`${styles.descriptionContainer}`}>
                 <h1 className={`${styles.title}`}>Bring everyone together to build better products.</h1>
                 <p className={`${styles.descriptionInfo}`}>

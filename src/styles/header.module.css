@@ -20,7 +20,6 @@
             color: var(--Dark-Grayish-Blue);
         }
     }
-
 }
 @media (width <= 1299px) {
     .header {
