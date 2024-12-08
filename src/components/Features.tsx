@@ -35,7 +35,7 @@ const Features = () => {
                     product teams.
                 </p>
             </div>
-            <div className={`${styles.featuresContentContainer} ms-5`}>
+            <div className={`${styles.featuresContentContainer}`}>
                 { features.map((feature=>(
                     <div key={feature.index} className={`${styles.featuresContent} d-flex`}>
                         <span className={styles.pointContainer}>

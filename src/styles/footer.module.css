@@ -57,7 +57,7 @@
 
         input {
             border: 2px solid white;
-
+            margin-right: 1rem;
             &::placeholder {
                 font-size: 13px;
             }
@@ -105,6 +105,44 @@
         }
         .footerContactContainer {
             margin-left: 3rem;
+        }
+    }
+}
+
+@media(width <= 680px) {
+    .footerContainer {
+        .navFooterContainer {
+            width: 50%;
+            ul:first-child {
+                padding: 0;
+            }
+        }
+        .footerContactContainer {
+            margin: 0;
+        }
+    }
+}
+
+@media(width <= 550px) {
+    .footerContainer {
+        padding: 0 20px;
+        
+    }
+}
+@media (width <= 450px) {
+    .footerContainer {
+        .socialContainer {
+            width: 50%;
+        }
+    }
+}
+@media(width <= 374px) {
+    .footerContainer {
+        .footerContactContainer {
+            input {
+                margin-right: 2px;
+                width: 70%;
+            }
         }
     }
 }

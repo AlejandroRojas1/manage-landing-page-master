@@ -131,3 +131,15 @@
         }
     }
 }
+@media(width <= 500px) {
+    .headerContainer {
+        .header {
+            a {
+                img {
+                    width: 30px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}

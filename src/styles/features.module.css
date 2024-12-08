@@ -119,3 +119,49 @@
         }
     }
 }
+
+@media (width<= 615px) {
+    .FeaturesContainer {
+        .featuresContent {
+
+            .pointContainer {
+                .title {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@media (width<= 550px) {
+    .FeaturesContainer {
+        margin: 0 0 0 20px;
+    }
+}
+
+@media (width <= 500px) {
+    .FeaturesContainer {
+        margin: 0;
+        
+        .featuresContentContainer {
+            margin-left: 1rem;
+            .featuresContent {
+
+                .pointContainer {
+                    padding: 0;
+
+                    .point {
+                        left: 0;
+                    }
+                    .title {
+                        font-size: 14px;
+                        padding-right: 1.5rem;
+                    }
+                    .description {
+                        margin: 0 5px 5px 0;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

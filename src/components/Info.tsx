@@ -13,7 +13,7 @@ const Info = () => {
                 <Button otherStyles=''>Get Started</Button> 
             </div>
             <div className={styles.illustrationInfo}>
-                <img src="/assets/illustration-intro.svg" width={550} height={500} />
+                <img src="/assets/illustration-intro.svg"/>
             </div>
         </section>
     )

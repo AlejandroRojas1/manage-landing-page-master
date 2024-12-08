@@ -67,7 +67,7 @@ const Footer = () => {
             </div>
 
             <div className={styles.footerContactContainer}>
-                <input className='rounded-pill px-4 py-2 me-3' type="text" placeholder='Updates in your inbox...' />
+                <input className='rounded-pill px-4 py-2' type="text" placeholder='Updates in your inbox...' />
                 <Button otherStyles='shadow-none' children='Go' />
             </div>
         </section>

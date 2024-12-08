@@ -1,22 +1,12 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useRef, useContext } from 'react'
+import { windowSizeContext } from '../App'
 import styles from '../styles/header.module.css'
 import Button from './Button'
 
 const Header = () => {
     const [displayedMenu, setDisplayedMenu] = useState<boolean>(false)
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth);
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+    
+    const windowWidth = useContext(windowSizeContext)
 
     const navRef = useRef<HTMLDivElement>(null)
 
