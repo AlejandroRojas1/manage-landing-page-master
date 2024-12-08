@@ -22,9 +22,26 @@
     }
 }
 
+@media (width <= 1299px) {
+    .getProductContainer {
+        padding-inline: 100px;
+    }
+}
+@media (width <= 1189px) {
+    .getProductContainer {
+        padding-inline: 50px;
+    }
+}
+
 @media (width <= 1075px) {
     .getProductContainer {
         flex-direction: column;
         justify-content: space-evenly;
+    }
+}
+
+@media (width <= 995px) {
+    .getProductContainer {
+        padding-inline: 20px;
     }
 }

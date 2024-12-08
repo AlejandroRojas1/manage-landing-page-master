@@ -82,22 +82,50 @@
 }
 
 @media (width <=857px) {
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:  linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 100%);
+        z-index: 1;
+    }
+
     .headerContainer {
 
         .header {
 
             .hamburguerMenu {
-
+                z-index: 2;
                 .hamburguerButton {
                     border: none;
-                    background-color: white;
+                    background-color: rgba(0, 0, 0, 0);
                 }
             }
 
             .navContainer {
                 display: none;
+                margin-inline: auto;
+                justify-content: center;
+                margin-top: 3rem;
+                padding: 2rem;
+                z-index: 99;
+                background-color: white;
+                border-radius: 5px;
+
                 ul {
                     flex-direction: column;
+                    align-items: center;
+
+                    li {
+                        a {
+                            font-weight: 900;
+                            font-size: 18px;
+                            color: var(--Dark-Blue);
+                        }
+                    }
                 }
             }
         }
