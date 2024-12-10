@@ -1,6 +1,8 @@
 # Manage Landing-page
 Landing page de producto de gestión de tareas 
 
+![preview](/public/assets/proyect2.jpg)
+
 ## si te interesa utilizar el código
 
 1. clonar el repositorio 
